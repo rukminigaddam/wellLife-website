@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>WellLife: Yoga & Meditation</title>
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body>
+
+    <div class="button-location">
+        <div class="title-group"> 
+            <img alt="Website logo" src="./img/logo.png" width="60" length="60" />
+            <h1>WellLife</h1>
+        </div>
+
+        <div class="button-gap">
+            <a href="#offerings-section"><button type="button">Classes</button></a>
+            <a href="#registration-form"><button type="button">Registration</button></a>
+
+            <button type="button" id="theme-button">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <h2 class="slogan">Where breath leads to peace</h2>
+
+    <img alt="A picture of a woman doing yoga" src="./img/main_pic.png" width="700" length="1300" class="main-pic" />
+
+    <div class="footer">
+        <p> &copy; 2025 WellLife. All rights reserved.</p>
+    </div>
+
+    <br><br>
+
+    <div class="offerings-section">
+        <a class="block" href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-benefits-of-yoga">
+            <article>
+                <h2>4 Reasons to Start Yoga Today</h2>
+            </article>
+        </a>
+    </div>
+
+    <div class="yoga-reasons">
+        <div class="reason">
+            Improves flexibility & Strength
+            <img alt="flexibility pic" src="./img/flexibility_pic.png" width="200" height="200"/>
+        </div>
+        <div class="reason">
+            Reduces stress
+            <img alt="relaxed pic" src="./img/relaxed_pic.png" width="210" height="210"/>
+        </div>
+        <div class="reason">
+            Benefits Overall Heart Health
+            <img alt="heart pic" src="./img/heart_pic.png" width="190" height="190"/>
+        </div>
+        <div class="reason">
+            Energizes & Boosts Mood
+            <img alt="happy pic" src="./img/happy_pic.png" width="190" height="190"/>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="about-text">
+            <h3>About this studio:</h3>
+            <p>Welcome to a space dedicated to stillness, balance, and mindful living. Our yoga and meditation offerings are designed to help you reconnect with your breath, quiet the mind, and restore inner peace. Whether you're a beginner or deep in your practice, you'll find guidance, calm, and community here. Come as you are — leave feeling grounded and renewed.</p>
+        </div>
+        <div class="about-image">
+            <img src="./img/logo.png" alt="Inside the studio" width="400" />
+        </div>
+    </div>
+
+    <div id="offerings-section" class="offerings-section">
+        <h3>Types of Yoga we Offer!</h3>
+        <div class="yoga-types-container">
+            <div class="left-half-text">
+                <ul>
+                    <li><b>Hatha:</b> <i>A foundational branch of yoga that focuses on balancing the body and mind through physical postures and breathing techniques</i></li>
+                    <li><b>Vinyasa:</b> <i>A dynamic style of yoga characterized by linking movement with breath in a continuous flow</i></li>
+                    <li><b>Power:</b> <i>A dynamic and physically demanding style of yoga that emphasizes strength, flexibility, and cardiovascular fitness</i></li>
+                    <li><b>Hot:</b> <i>Any yoga practice performed in a heated and humidified studio, typically ranging from 90 to 105 degrees Fahrenheit</i></li>
+                    <li><b>Chair:</b> <i>A modified form of yoga that utilizes a chair for support during seated or standing poses, making it accessible to individuals with limited mobility</i></li>
+                </ul>
+            </div>
+            <div class="right-image-column">
+                <img src="./img/group_pic.jpg" alt="Group yoga session" class="group-pic" />
+                <img src="./img/gray_pic.jpg" alt="Gray peaceful yoga" class="group-pic" />
+            </div>
+        </div>
+    </div>
+
+    <h3 class="additional-info">Additional Information</h3>
+    <ul class="additional-info-bullet">
+        <li><b>Location:</b> <i>WellLife Howard County, 2480 Longly Ln Suite C, Marriottsville, MD 21114</i></li>
+        <li><b>Hours:</b> <i>Monday - Sunday: 8am - 8pm</i></li>
+        <li><b>Phone Number:</b> <i>410-489-0524</i></li>
+        <li><b>Email:</b> <i>well_life@gmail.com</i></li>
+        <li><b>Arrival Information:</b> <i>Come 5 minutes before class starts to have time to set up and bring water for hydration!</i></li>
+    </ul>
+
+    <h2 id="registration-form"> Sign Up For a Class!</h2>
+    <form id="form">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" />
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" />
+
+        <label for="type">Type of Yoga</label>
+        <select id="type" name="type">
+            <option value="">-- Select Type --</option>
+            <option value="Hatha">Hatha</option>
+            <option value="Vinyasa">Vinyasa</option>
+            <option value="Power">Power</option>
+            <option value="Hot">Hot</option>
+            <option value="Chair">Chair</option>
+        </select>
+
+        <label for="day">Day of the Week</label>
+        <select id="day" name="day">
+            <option value="">-- Select a day --</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+
+        <label for="time">Time</label>
+        <select id="time" name="time">
+            <option value="">-- Select a time --</option>
+            <option value="1">8am - 9am</option>
+            <option value="2">9am - 10am</option>
+            <option value="3">10am - 11am</option>
+            <option value="4">11am - 12pm</option>
+            <option value="5">12pm - 1pm</option>
+            <option value="6">1pm - 2pm</option>
+            <option value="7">2pm - 3pm</option>
+            <option value="8">3pm - 4pm</option>
+            <option value="9">4pm - 5pm</option>
+            <option value="10">5pm - 6pm</option>
+            <option value="11">6pm - 7pm</option>
+            <option value="12">7pm - 8pm</option>
+        </select>
+
+        <button type="submit">Submit Registration</button>
+        <p id="confirmation"></p>
+    </form>
+
+    <script src="index.js"></script>
+
+    <!-- navbar
+
+Purpose:
+- Navigation bar that allows users to jump to different sections of the webpage
+- Also holds buttons for user settings (dark mode, reduce motion)
+
+-->
+    
+
+
+
+    <div id="success-modal" class="modal">
+        <div class="modal-container">
+            <div class="modal-item">
+                <p id="modal-text">Place Holder Text</p>
+            </div>
+            <div class="modal-item">
+                <img alt="om_pic" src="./img/om_pic.avif" width="100" height="100"/>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
